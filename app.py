@@ -2,7 +2,9 @@ import bottle
 from bottle import route, run, template, BaseTemplate, static_file, request
 from beaker.middleware import SessionMiddleware
 import numpy_financial as npf
+import os
 
+# updated 19th AUG. 2022
 
 app = bottle.default_app()
 BaseTemplate.defaults['get_url'] = app.get_url  # reference to function
