@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+        integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+        crossorigin="anonymous">
+  <title>IRR calculator page 1</title>
+</head>
+
+<body>
+<div class="container mt-5">
+
+	<div>
+		<img src="{{ get_url('static', filename='irrcalc20220814.jpg') }}" alt="title-picture" class="d-block mx-auto w-75">
+	</div>
+
+	<div class="text-center mb5">
+		<h2>The Internal Rate of Return (IRR) Calculator</h2>
+	</div>
+
+	<div class="text-center form-group mb-4">
+		<form action="/investment" method="POST">
+
+			<label for="investment"><strong>initial investment amount</strong> ($)</label>
+			<input type="number" step="100" name="investment">
+			<br>
+
+			<input class="btn btn-primary" type="submit" value="next page">
+		</form>
+	</div>
+
+</div>
+</body>
+</html>

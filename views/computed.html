@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+        integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+        crossorigin="anonymous">
+  <title>IRR calculatore page 2</title>
+</head>
+
+<body>
+<div class="container mt-5">
+
+	<div class="text-center h-25 bg-success text-white">
+		<strong>amount of the initial investment: </strong> {{i_ivst}} ($)
+	</div>
+
+
+	<div class="text-center form-group mb-4">
+		<h3>input the annual cash flow amount below</h3>
+
+		<form action="/cash-flow" method="POST">
+			<label for="year1"><strong></strong> Year 1 ($)</label>
+			<input type="number" step="1" name="year1"><br>
+			<label for="year2"><strong></strong> Year 2 ($)</label>
+			<input type="number" step="1" name="year2"><br>
+			<label for="year3"><strong></strong> Year 3 ($)</label>
+			<input type="number" step="1" name="year3"><br>
+			<label for="year4"><strong></strong> Year 4 ($)</label>
+			<input type="number" step="1" name="year4"><br>
+			<label for="year5"><strong></strong> Year 5 ($)</label>
+			<input type="number" step="1" name="year5"><br>
+
+			<input class="btn btn-primary" type="submit" value="calculate">
+		</form>
+	</div>
+
+</div>
+</body>
+</html>
+  

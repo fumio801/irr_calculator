@@ -1,0 +1,4 @@
+Beaker==1.11.0
+bottle==0.12.23
+numpy==1.23.2
+numpy-financial==1.0.0
