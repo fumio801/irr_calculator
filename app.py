@@ -74,8 +74,11 @@ def compute():
 	return template('outputsheet.html', irr_1 = str(computed_irr))
 
 # --------------- Bottle ----------------------
-# bottle.run(app=app, host='0.0.0.0', port=int(os.environ.get('PORT', 5000)))
-bottle.run(app=app)
+# to run on the heroku, you should use line below
+
+bottle.run(app=app, host='0.0.0.0', port=int(os.environ.get('PORT', 5000)))
+
+# bottle.run(app=app)
 
 
 
